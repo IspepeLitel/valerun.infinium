@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Valerun INFINIUM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/—Pngtree—letter v and wing logo_5824406.png">
+</head>
+<body>
+    <div class="bg_img"></div>
+    <header>
+        <div class="logo">
+            <a href="home.html">Valerun INFINIUM</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Головна</a></li>
+                <li><a href="http://95.216.30.80:25870/?worldname=world&mapname=flat&zoom=6&x=-165&y=64&z=81#">Мапа</a></li>
+                <li><a href="rules.html">Закони серверу</a></li>
+                <li><a href="https://valerun-infinium.fandom.com/ru/wiki/%D0%92%D1%96%D0%BA%D1%96_%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D1%83%D0%BD:_%D0%BF%D0%B5%D1%80%D0%B5%D1%80%D0%BE%D0%B4%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F">Лор</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="text">
+            <h2>Чекаємо на тебе!</h2>
+            <a href="https://t.me/+AqJqcH0NTlVkYTUy" class="telegram-btn">Перейти в групу Telegram</a>
+        </div>
+    </div>
+    <div class="image-container">
+        <div class="central-image">
+            <img src="images\545fa917-745e-495b-b063-1b78e7d4abc8.jpg" alt="Default Image">
+            </div>
+            <br><br><br>
+    </div>
+    <div class="rectangle">
+        <h2>О НАС</h2>
+        <p class="text" >Valerun Infinium - це україномовний майнкрафт сервер,<br>який пропонує гравцям безліч можливостей для гри та спілкування.<br>
+        <br>
+        На сервері зібрані найцікавіші плагіни,<br> які дозволяють розширити геймплей та зробити гру ще більш захоплюючою!</p>
+        <div class="image-container2">
+            <img src="images\2023-02-25_21.28.50.png"> 
+            <img src="images\1662055783_1-oir-mobi-p-fon-dlya-soobshchestva-oboi-1.jpg">
+        </div>
+        <p class="text">Крім того, для гравців організовані різноманітні івенти, турніри та конкурси, що дозволяє змагатися з іншими гравцями
+        та отримувати цінні призи.</p>
+        <p class="text">Також на сервері Valerun Infinium дуже розвинута система економіки, яка дозволяє гравцям заробляти гроші та купувати
+        різноманітні інструменти,<br> зброю та блоки для будівництва. Безліч можливостей та дружня спільнота гравців зроблять вашу
+        гру на сервері Valerun Infinium незабутньою!</p>
+        <br>
+        <br>
+        <div style="display: flex; align-items: center;">
+            <img src="images\free-png.ru-8.png" style=" display: center; margin-right: 20px; max-width: 50%; height: auto;">
+            <p class="text" style="font-size: 65px; font-weight: bold;">Здобувай не забутні емоції тут!</p>
+        </div>
+
+        
+    </div>
+
+
+
+    <script>
+    const centralImage = document.querySelector('.central-image img');
+    const images = ['images/545fa917-745e-495b-b063-1b78e7d4abc8.jpg', 'images/69087f9c-fb67-450d-b73f-46f63b8fe172.jpg','images/msg-1788783354-16623.jpg','images/msg-1788783354-16706.jpg']; 
+    let currentImageIndex = 0; /* индекс текущего изображения */
+
+    /* функция для смены изображения */
+    function changeImage() {
+        currentImageIndex++;
+        if (currentImageIndex >= images.length) {
+            currentImageIndex = 0;
+        }
+        const nextImage = new Image();
+        nextImage.src = images[currentImageIndex];
+        nextImage.addEventListener('load', () => {
+            centralImage.classList.add('hide');
+            setTimeout(() => {
+                centralImage.src = nextImage.src;
+                centralImage.classList.remove('hide');
+            }, 1000); /* время анимации */
+        });
+    }
+
+    /* запускаем функцию смены изображения каждые 5 секунд */
+    setInterval(changeImage, 4000);
+
+    
+    </script>
+</body>
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2023 Valerun INFINIUM</p>
+        <ul>
+            <li><a href="https://discord.gg/dMtcCrAkz5">Discord</a></li>
+            <li><a href="https://t.me/+AqJqcH0NTlVkYTUy">Telegram</a></li>
+            <li><a href="https://valerun-infinium.fandom.com/ru/wiki/%D0%92%D1%96%D0%BA%D1%96_%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D1%83%D0%BD:_%D0%BF%D0%B5%D1%80%D0%B5%D1%80%D0%BE%D0%B4%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F">Wiki</a></li>
+        </ul>
+    </div>
+</footer>
+
+</html>

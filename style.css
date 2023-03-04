@@ -1,0 +1,276 @@
+body {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.7), rgb(30, 26, 45, 0.999)), url("images/DALL·E 2023-02-27 01.11.33 - futuristic cyberpunk city from above in focus neon anime 4k hd (1).png");
+    background-size: 100%;
+    background-position: top;
+    min-height: 1000;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Mynerve', cursive;
+    font-family: 'Noto Sans Bamum', sans-serif;
+    font-family: 'Open Sans', sans-serif;  
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+h1 {
+    font-size: 67px;
+    font-weight: bold;
+    margin: 50px 0 30px 0;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+h2 {
+    font-size: 55px;
+    font-weight: bold;
+    margin: 50px 0 30px 0;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text {
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: justify;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    background-color: #181526;
+    /* цвет фона хедера */
+    display: flex;
+    /* применяем flexbox для расположения элементов в ряд */
+    justify-content: space-between;
+    /* выравниваем элементы по краям */
+    align-items: center;
+    /* выравниваем элементы по вертикали */
+    padding: 10px;
+    /* отступы вокруг хедера */
+    box-shadow: 0 0 5px rgba(226, 226, 226, 0.5);
+    
+    
+}
+
+.logo a {
+    color: #fff;
+    /* цвет текста логотипа */
+    text-decoration: none;
+    /* убираем подчеркивание у логотипа */
+    font-size: 24px;
+    /* размер шрифта логотипа */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* применяем flexbox для расположения элементов в ряд */
+}
+
+nav li {
+    margin-right: 20px;
+    /* отступ между элементами */
+    box-shadow: 2px 2px 2px rgba(137, 137, 137, 0.5);
+}
+
+nav a {
+    display: block;
+    /* превращаем ссылки в блочные элементы */
+    color: #fff;
+    /* цвет текста ссылок */
+    text-decoration: none;
+    /* убираем подчеркивание у ссылок */
+    padding: 10px;
+    padding-right: 20px;
+    /* отступы вокруг текста ссылок */
+    background-color: rgb(44, 40, 58);
+}
+
+nav a:hover {
+    background-color: rgb(214, 214, 214);
+    color: #545454;
+    /* изменяем цвет фона при наведении курсора */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.text {
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.central-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    /* задаем высоту блока */
+}
+
+.central-image img {
+    max-width: 100%;
+    /* задаем максимальную ширину картинки */
+    max-height: 100%;
+    /* задаем максимальную высоту картинки */
+    object-fit: contain;
+    transition: opacity 0.2s ease-in-out;
+    box-shadow: 50px 50px 9px rgba(8, 8, 8, 0.7)    ;
+    /* задаем способ масштабирования картинки, чтобы она занимала всю высоту или ширину блока в зависимости от пропорций */
+}
+
+.central-image img.hide {
+    opacity: 0    ;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+p{
+    list-style: none;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+
+.rectangle {
+    top: 20px;
+    width: 100%;
+    height: 2000px;
+    background-color: #060413;
+    padding: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 0px 10px rgba(15, 5, 34, 0.2);
+}
+.image-container2 {
+    display: flex;
+    justify-content: center;
+    /* выравнивание по центру */
+    align-items: center;
+    /* выравнивание по вертикали */
+    height: 300px;
+    /* высота контейнера */
+    width: 100%;
+    /* ширина контейнера */
+}
+.rules {
+    background-color: #4a377950;
+    padding: 20px;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+
+.rules h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rules ol {
+    margin: 0;
+    padding: 0 0 0 40px;
+}
+
+.rules li {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-weight: bold;
+}   
+
+.image-container2 img {
+    width: 50%;
+    /* задаем равную ширину для обеих картинок */
+    height: 100%;
+    /* задаем высоту контейнера для обеих картинок */
+    object-fit: cover;
+    /* растягивание изображения для заполнения области */
+    margin: 0 10px;
+    /* отступы между картинками */
+}
+@media only screen and (max-width: 600px) {
+    /* Здесь задаем стили для устройств с шириной экрана до 600px */
+
+    /* Изменяем размер шрифта */
+    body {
+        font-size: 16px;
+    }
+
+    /* Скрываем элементы, которые не помещаются на экране */
+    .hidden-on-mobile {
+        display: none;
+    }
+
+    /* Задаем отступы и выравнивание */
+    .content {
+        padding: 10px;
+        text-align: center;
+        padding-right: 20px;
+    }
+}
+ol {
+    list-style-type: disc; 
+}
+details summary {
+    color: rgba(255, 255, 255, 0.453);
+}
+
+.telegram-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #3b6b8379;
+    text-decoration: none;  
+    transition: all 0.3s ease-in-out;
+}
+
+.telegram-btn:hover {
+    transform: scale(1.1);
+    background-color: #00aced;
+    font-size: size 28px;    
+}
+
