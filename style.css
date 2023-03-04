@@ -236,6 +236,12 @@ p{
     /* Изменяем размер шрифта */
     body {
         font-size: 16px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Mynerve', cursive;
+        font-family: 'Noto Sans Bamum', sans-serif;
+        font-family: 'Open Sans', sans-serif;  
+        overflow-x: hidden;
+        word-wrap: break-word;
     }
 
     /* Скрываем элементы, которые не помещаются на экране */
